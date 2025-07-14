@@ -1,0 +1,23 @@
+#dongle{
+    float: left;
+    margin-right: 15px;
+
+}
+#usb{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+#div img{
+
+ width: 20px;
+ border: 10px solid black;
+ height:330px;
+ object-fit: cover;
+ border-radius: 10px;
+ transition: all ease 0.4s;
+
+}
+#div img:hover{
+    width: 450px;
+}
