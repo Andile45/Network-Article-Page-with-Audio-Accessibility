@@ -1,23 +1,193 @@
-#dongle{
-    float: left;
-    margin-right: 15px;
-
+#dongle {
+  float: left;
+  margin-right: 15px;
 }
-#usb{
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
+#usb {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
 }
-#div img{
-
- width: 20px;
- border: 10px solid black;
- height:330px;
- object-fit: cover;
- border-radius: 10px;
- transition: all ease 0.4s;
-
+#div img {
+  width: 20px;
+  border: 2px solid black;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all ease 0.4s;
 }
-#div img:hover{
-    width: 450px;
+#div img:hover {
+  width: 450px;
+}
+#div {
+  text-align: center;
+}
+#wifiImg {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+#container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-inline: 60px;
+  border: 2px solid black;
+  padding: 25px;
+  background-color: lightgrey;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+#container h3 {
+  font-size: x-large;
+}
+#container ul {
+  font-size: larger;
+}
+.summaryHeading {
+  text-align: center;
+  font-size: xx-large;
+}
+.summary {
+  text-align: center;
+  font-size: larger;
+}
+#usb {
+  margin-inline: 40px;
+}
+#usb dd {
+  font-size: larger;
+}
+#usb dt {
+  font-size: x-large;
+  font-weight: bold;
+}
+#devices {
+  margin-top: 50px;
+}
+#devices h1 {
+  font-size: xx-large;
+  text-align: center;
+}
+#devicesP {
+  font-size: larger;
+  text-align: center;
+}
+.intro {
+  text-align: center;
+}
+.intro h1 {
+  font-size: xx-large;
+}
+.intro p {
+  font-size: larger;
+}
+#net {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#net ul li {
+  font-size: larger;
+}
+#net ol li {
+  font-size: larger;
+}
+#net h3 {
+  font-size: xx-large;
+}
+#server h1 {
+  text-align: center;
+  font-size: xx-large;
+}
+#severImg {
+  text-align: center;
+}
+#server h2 {
+  text-align: center;
+  font-size: xx-large;
+}
+#server p {
+  text-align: center;
+  font-size: larger;
+}
+#server1 {
+  border: 2px solid black;
+}
+#server2 {
+  border: 2px solid black;
+}
+#server h3 {
+  font-size: x-large;
+  text-align: center;
+}
+#server ul li {
+  text-align: left;
+  list-style-position: inside;
+  margin: 0 auto;
+  display: table;
+}
+#icons {
+  display: inline-flex;
+  justify-items: center;
+}
+#nav {
+  display: inline-flex;
+  text-align: center;
+}
+
+#nav ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: large;
+  padding: 10px;
+  justify-content: center;
+}
+header {
+  text-align: center;
+  /* background-color: lightgray; */
+  padding: 60px;
+  background-image: url("Assets/bg7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#nav li a {
+  color: rgb(17, 17, 17);
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: larger;
+  text-decoration: none;
+  /* list-style: ; */
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("Assets/BG5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#wifi {
+  border: 2px solid black;
+}
+#div1 {
+  background-color: lightgrey;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+#div2 {
+  background-color: lightgrey;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+main h1 {
+  text-align: center;
 }

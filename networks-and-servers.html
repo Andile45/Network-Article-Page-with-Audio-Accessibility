@@ -10,19 +10,31 @@
 
 <body>
 
+    <!-- <h1>Topics to be covered</h1> -->
     <header>
-        <h1>Topics to be covered</h1>
-        <ul>
-            <li><a href="#">Understanding USB Dongles</a></li>
-            <li><a href="">Secure collaboration across the internet</a></li>
-            <li><a href="">Types and functions of networking and wireless connections</a></li>
-            <li><a href="#server">Description of the common functionality of server networks</a></li>
-        </ul>
+
+
+        <div id="nav">
+            <ul>
+                <li><a href="#usb">Understanding USB Dongles</a></li>
+                <li><a href="#Networking">Secure collaboration across the internet</a></li>
+                <li><a href="#connections">Types and functions of networking and wireless connections</a></li>
+                <li><a href="#server">Description of the common functionality of server networks</a></li>
+            </ul>
+        </div>
     </header>
     <main>
+
+        <h1>Understanding Wi-Fi USB Dongles</h1>
+
+        <div id="wifiImg">
+            <img id="wifi" src="Assets/wifi-off.avif" width="400px" height="430px" alt="" />
+        </div>
+
+
         <section id="usb">
 
-            <img id="dongle" src="Assets/usd-dogle.jpg" width="200px" height="230px" alt="Wifi USB Dongle" />
+            <img id="dongle" src="Assets/usd-dogle.jpg" width="350px" height="370px" alt="Wifi USB Dongle" />
 
             <dl>
                 <dt>Purpose</dt>
@@ -53,7 +65,7 @@
 
         <section id="devices">
             <h1>Which devices use Wi-Fi USB dongles?</h1>
-            <p>Wi-Fi USB dongles are most commonly used with:</p>
+            <p id="devicesP">Wi-Fi USB dongles are most commonly used with:</p>
 
             <div id="div">
                 <img id="" src="Assets/old desktop.webp" alt="" />
@@ -63,49 +75,74 @@
                 <img id="" src="Assets/printers.jpg" alt="" />
                 <img id="" src="Assets/scanner.jpg" alt="" />
                 <img id="" src="Assets/single board computer.jpg" alt="" />
-                <img id="" src="Assets/network device.png" alt="" />
+                <img id="" src="Assets/server room.jpg" alt="" />
 
             </div>
 
-            <h3>Desktop Computers</h3>
-            <ul>
-                <li>Many desktop PCs do not come with built-in Wi-Fi, especially older models.</li>
-                <li>A dongle allows a desktop to connect to Wi-Fi networks without installing an internal card.</li>
-            </ul>
+            <div id="container">
+                <div id="desktop">
+                    <h3>Desktop Computers</h3>
+                    <ul>
+                        <li>Many desktop PCs do not come with built-in Wi-Fi, especially older models.</li>
+                        <li>A dongle allows a desktop to connect to Wi-Fi networks without installing an internal card.
+                        </li>
+                    </ul>
+                </div>
 
-            <h3>Laptops</h3>
-            <ul>
-                <li>Older laptops that only have Ethernet or outdated Wi-Fi standards (like 802.11g) can use a dongle to
-                    access modern, faster Wi-Fi.</li>
-                <li>Also useful if the built-in Wi-Fi adapter is broken or underperforming.</li>
-            </ul>
+                <div id="laptops">
+                    <h3>Laptops</h3>
+                    <ul>
+                        <li>Older laptops that only have Ethernet or outdated Wi-Fi standards (like 802.11g) can use a
+                            dongle to
+                            access modern, faster Wi-Fi.</li>
+                        <li>Also useful if the built-in Wi-Fi adapter is broken or underperforming.</li>
+                    </ul>
 
-            <h3>Smart TVs and Media Players</h3>
-            <ul>
-                <li>Some older Smart TVs and streaming boxes (like certain Roku, Amazon Fire Stick, or Blu-ray players)
-                    support USB Wi-Fi dongles for wireless internet access if they lack built-in Wi-Fi.</li>
-            </ul>
+                </div>
 
-            <h3>Printers and Scanners</h3>
-            <ul>
-                <li>A few older network-capable printers can use a USB Wi-Fi adapter to join a wireless network (if they
-                    have a USB host port and support it).</li>
-            </ul>
+                <div id="media">
+                    <h3>Smart TVs and Media Players</h3>
+                    <ul>
+                        <li>Some older Smart TVs and streaming boxes (like certain Roku, Amazon Fire Stick, or Blu-ray
+                            players)
+                            support USB Wi-Fi dongles for wireless internet access if they lack built-in Wi-Fi.</li>
+                    </ul>
 
-            <h3>Single-Board Computers</h3>
-            <ul>
-                <li>Devices like the Raspberry Pi (older models) that don’t have Wi-Fi can use a USB dongle for wireless
-                    networking.</li>
-            </ul>
+                </div>
 
-            <h3>Network Appliances</h3>
-            <ul>
-                <li>Some industrial or special-purpose devices that only have USB ports can add Wi-Fi connectivity
-                    through a dongle if supported by their firmware.</li>
-            </ul>
+                <div id="printers">
 
-            <h3>In summary</h3>
-            <p> Any device with a USB port, running an operating system or
+                    <h3>Printers and Scanners</h3>
+                    <ul>
+                        <li>A few older network-capable printers can use a USB Wi-Fi adapter to join a wireless network
+                            (if they
+                            have a USB host port and support it).</li>
+                    </ul>
+                </div>
+
+                <div id="Single-Board">
+                    <h3>Single-Board Computers</h3>
+                    <ul>
+                        <li>Devices like the Raspberry Pi (older models) that don’t have Wi-Fi can use a USB dongle for
+                            wireless
+                            networking.</li>
+                    </ul>
+                </div>
+
+                <div id="network">
+                    <h3>Network Appliances</h3>
+                    <ul>
+                        <li>Some industrial or special-purpose devices that only have USB ports can add Wi-Fi
+                            connectivity
+                            through a dongle if supported by their firmware.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <br>
+            <h3 class="summaryHeading">In summary</h3>
+            <p class="summary"> Any device with a USB port, running an operating system or
                 firmware that supports external USB Wi-Fi adapters, can
                 potentially use a Wi-Fi dongle to access a wireless network.
             </p>
@@ -114,76 +151,104 @@
 
         <section id="Networking">
 
-            <h1>Types & Functions of networking and wireless connections</h1>
-            <p>
-                Networking and wireless connections Link devices so that they share data
-                and resources
+            <section class="intro">
+                <h1>Types & Functions of networking and wireless connections</h1>
+                <p>
+                    Networking and wireless connections Link devices so that they share data
+                    and resources
 
-            </p>
+                </p>
+                <img id="" src="Assets/networking.jpg" width="580px" height="550px" alt="" />
+            </section>
 
-            <h3>Types</h3>
-            <ol>
+            <section id="connections">
 
-                <li>Wired Connections</li>
-                <ul>
-                    <li>Ethernet: Reliable, fast connections using cables </li>
-                    <li>Fiber optics: Extremely high- speed, long distance connections</li>
+                <div id="net">
+
+                    <div id="div1">
+                        <h3>Types</h3>
+                        <ol>
+
+                            <li>Wired Connections</li>
+                            <ul>
+                                <li>Ethernet: Reliable, fast connections using cables </li>
+                                <li>Fiber optics: Extremely high- speed, long distance connections</li>
+                            </ul>
+                            <li>Wireless Connections</li>
+                            <ul>
+                                <li><strong>Wi-Fi:</strong> Wireless local area network (WLAN) for homes and offices
+                                </li>
+                                <li><strong>Bluetooth:</strong> Short-range connection for peripherals</li>
+                                <li><strong>Cellular (3G, 4G, 5G):</strong> Mobile networks for internet access</li>
+                                <li><strong>Satellite:</strong> Wireless, long-distance internet access (used in remote
+                                    areas)</li>
+                            </ul>
+
+
+                        </ol>
+                    </div>
+                    <div id="div2">
+
+                        <h3>Functions</h3>
+                        <ul>
+                            <li>Allow communication between devices (file sharing, messaging, streaming).</li>
+                            <li>Enable resource sharing (printers, storage, internet connection).</li>
+                            <li>Support remote work and collaboration over the internet.</li>
+                            <li>Facilitate access to cloud services and online resources.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+            <section id="server">
+                <h1>Server Networks</h1>
+                <div id="severImg">
+                    <img id="server1" src="Assets/server-room-icon.avif" width="400px" height="440px" />
+                    <img id="server2" src="Assets/server_room02.jpg" width="400px" height="440px" />
+                </div>
+
+                <h2>Description of the Common Functionality of Server Networks</h2>
+
+                <p>
+                    A server network is a system where one or more servers provide services to client
+                    devices on the network.
+                </p>
+
+                <h3>Common functions:</h3>
+
+                <ul class="severList">
+                    <li><b>File server:</b> Stores and manages files centrally for clients to access.</li>
+                    <li><b>Print server:</b> Manages printers and print jobs for multiple clients.</li>
+                    <li><b>Web server:</b> Hosts websites and serves web pages to browsers.</li>
+                    <li><b>Database server:</b> Stores and manages structured data for apps or users.</li>
+                    <li><b>Email server:</b> Sends, receives, and stores email messages.</li>
+                    <li><b>Authentication server:</b> Verifies user identities (e.g., Active Directory).</li>
+                    <li><b>Application server:</b> Runs specific business applications for clients.</li>
                 </ul>
-                <li>Wireless Connections</li>
+
+                <h3>Benefits of server networks:</h3>
                 <ul>
-                    <li><strong>Wi-Fi:</strong> Wireless local area network (WLAN) for homes and offices</li>
-                    <li><strong>Bluetooth:</strong> Short-range connection for peripherals</li>
-                    <li><strong>Cellular (3G, 4G, 5G):</strong> Mobile networks for internet access</li>
-                    <li><strong>Satellite:</strong> Wireless, long-distance internet access (used in remote areas)</li>
+                    <li>Centralized management and security.</li>
+                    <li>Easier to back up and maintain data.</li>
+                    <li>Shared resources lower costs and improve efficiency.</li>
                 </ul>
 
 
-            </ol>
-
-
-            <h3>Functions</h3>
-            <ul>
-                <li>Allow communication between devices (file sharing, messaging, streaming).</li>
-                <li>Enable resource sharing (printers, storage, internet connection).</li>
-                <li>Support remote work and collaboration over the internet.</li>
-                <li>Facilitate access to cloud services and online resources.</li>
-            </ul>
-
-
-        </section>
-
-
-        <section id="server">
-
-            <h2>Description of the Common Functionality of Server Networks</h2>
-
-            <p>
-                A server network is a system where one or more servers provide services to client
-                devices on the network.
-            </p>
-
-            <h3>Common functions:</h3>
-            <ul>
-                <li><b>File server:</b> Stores and manages files centrally for clients to access.</li>
-                <li><b>Print server:</b> Manages printers and print jobs for multiple clients.</li>
-                <li><b>Web server:</b> Hosts websites and serves web pages to browsers.</li>
-                <li><b>Database server:</b> Stores and manages structured data for apps or users.</li>
-                <li><b>Email server:</b> Sends, receives, and stores email messages.</li>
-                <li><b>Authentication server:</b> Verifies user identities (e.g., Active Directory).</li>
-                <li><b>Application server:</b> Runs specific business applications for clients.</li>
-            </ul>
-
-            <h3>Benefits of server networks:</h3>
-            <ul>
-                <li>Centralized management and security.</li>
-                <li>Easier to back up and maintain data.</li>
-                <li>Shared resources lower costs and improve efficiency.</li>
-            </ul>
-
-
-        </section>
+            </section>
 
     </main>
+
+    <footer>
+        <div class="icons">
+            <img id="" src="Assets/insta.webp" width="45px" height="30px" />
+            <img id="" src="Assets/facebook.webp" width="45px" height="30px" />
+            <img id="" src="Assets/twitter.png" width="45px" height="30px" />
+        </div>
+
+    </footer>
 </body>
 
 </html>
